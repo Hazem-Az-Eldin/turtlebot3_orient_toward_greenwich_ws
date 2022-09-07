@@ -1,0 +1,4 @@
+[console_scripts]
+Robot_interface = turtlebot3_orient_toward_greenwich.Robot_interface:main
+Turtlebot = turtlebot3_orient_toward_greenwich.Turtlebot:main
+

@@ -1,0 +1,85 @@
+[0.222s] Invoking command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hazem/turtlebot3_robot_localization_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node
+[0.260s] -- The C compiler identification is GNU 9.4.0
+[0.301s] -- The CXX compiler identification is GNU 9.4.0
+[0.305s] -- Check for working C compiler: /usr/bin/cc
+[0.355s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.355s] -- Detecting C compiler ABI info
+[0.406s] -- Detecting C compiler ABI info - done
+[0.419s] -- Detecting C compile features
+[0.419s] -- Detecting C compile features - done
+[0.420s] -- Check for working CXX compiler: /usr/bin/c++
+[0.478s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.479s] -- Detecting CXX compiler ABI info
+[0.542s] -- Detecting CXX compiler ABI info - done
+[0.559s] -- Detecting CXX compile features
+[0.560s] -- Detecting CXX compile features - done
+[0.563s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.592s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.592s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.801s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.838s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.846s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.911s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.937s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.020s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.104s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.165s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.207s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.208s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.209s] -- Looking for pthread.h
+[1.262s] -- Looking for pthread.h - found
+[1.262s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.314s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.314s] -- Looking for pthread_create in pthreads
+[1.357s] -- Looking for pthread_create in pthreads - not found
+[1.357s] -- Looking for pthread_create in pthread
+[1.408s] -- Looking for pthread_create in pthread - found
+[1.409s] -- Found Threads: TRUE  
+[1.525s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.584s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[1.594s] -- Found tf2_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_msgs/cmake)
+[1.747s] -- Found turtlebot3_msgs: 2.2.1 (/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[1.871s] -- Configuring done
+[1.885s] -- Generating done
+[1.888s] -- Build files have been written to: /home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node
+[1.898s] Invoked command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hazem/turtlebot3_robot_localization_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node
+[1.899s] Invoking command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node -- -j12 -l12
+[1.992s] [35m[1mScanning dependencies of target turtlebot3_fake_node[0m
+[2.063s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[8.929s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[9.171s] [100%] Built target turtlebot3_fake_node
+[9.180s] Invoked command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node -- -j12 -l12
+[9.199s] Invoking command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node
+[9.207s] -- Install configuration: ""
+[9.207s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[9.208s] -- Set runtime path of "/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/rviz
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/rviz/model.rviz
+[9.209s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/include/
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[9.210s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[9.211s] -- Installing: /home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[9.216s] Invoked command in '/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlesim:/home/hazem/dev_ws/install/turtlebot3_simulations:/home/hazem/dev_ws/install/turtlebot3_navigation2:/home/hazem/dev_ws/install/turtlebot3_fake_node:/home/hazem/dev_ws/install/turtlebot3_msgs:/home/hazem/dev_ws/install/turtlebot3_gazebo:/home/hazem/dev_ws/install/turtlebot3_description:/home/hazem/dev_ws/install/turtlebot3_cartographer:/home/hazem/dev_ws/install/trajectory_generation:/home/hazem/dev_ws/install/rviz_imu_plugin:/home/hazem/dev_ws/install/my_package:/home/hazem/dev_ws/install/mobile_robot:/home/hazem/dev_ws/install/imu_filter_madgwick:/home/hazem/dev_ws/install/dynamixel_sdk:/home/hazem/dev_ws/install/cpp_pubsub:/home/hazem/dev_ws/install/ROS2-Trajectory-Generation:/home/hazem/dev_ws/install/turtlebot_greenwich:/home/hazem/dev_ws/install/turtlebot3_teleop:/opt/ros/foxy LD_LIBRARY_PATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hazem/turtlebot3_robot_localization_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_fake_node

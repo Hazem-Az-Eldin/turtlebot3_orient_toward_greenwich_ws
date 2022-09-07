@@ -1,0 +1,6 @@
+source;share/turtle_bot_orient_toward_greenwich/hook/pythonpath.ps1
+source;share/turtle_bot_orient_toward_greenwich/hook/pythonpath.dsv
+source;share/turtle_bot_orient_toward_greenwich/hook/pythonpath.sh
+source;share/turtle_bot_orient_toward_greenwich/hook/ament_prefix_path.ps1
+source;share/turtle_bot_orient_toward_greenwich/hook/ament_prefix_path.dsv
+source;share/turtle_bot_orient_toward_greenwich/hook/ament_prefix_path.sh
