@@ -1,7 +1,0 @@
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/CustomArray.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl

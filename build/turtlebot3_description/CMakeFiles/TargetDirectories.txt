@@ -1,9 +1,0 @@
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/install/strip.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/install/local.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/install.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/list_install_components.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/rebuild_cache.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/edit_cache.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/test.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/turtlebot3_description_uninstall.dir
-/home/hazem/turtlebot3_robot_localization_ws/build/turtlebot3_description/CMakeFiles/uninstall.dir

@@ -1,90 +1,59 @@
-# turtlebot3_robot_localization_ws
+Goal:
+Turtlebot3 should orient toward Greenwich Observatory from anywhere on earth
 
-This repository's goal is to make a ready to use simulation that use robot_localization package for sensor fusing.
+Proposed Solution:
 
-This simulation works under ROS2 Foxy.\
-The simulation will use a turtlebot3 waffle in the turtlebot world.\
-Turtlebot's urdf and sdf files were modified to add a gps sensor.\
-Also the urdf will use the wheel encoder odometry
+The robot is using GPS  sensor to read its current Longitude and Latitude, with a given  Longitude and Latitude of the Greenwich Observatory. For measuring its  orientation, IMU sensor was chosen. Given these information, the robot should be able to calculate the bearing and adjust itself toward the goal. 
 
-There are two launch file for robot_localization package :
-- First one is sensor fusion with odometry and IMU sensor.
-- Second one is  sensor fusion with odometry, IMU and GPS sensor.
+Proposed Design:
+
+There are Two main Classes that communicate with each other using ROS. 
+
+The First class is the Turtlebot3 which is responsible for everything related to the robot. For example, controlling the motor, reading the sensor values and orient to the goal. 
+The second class is the Robot-Interface, which is responsible for choosing the mode of operation and to drive the robot manually.
+
+There are three modes supported by the robot: 
+    1. Standby: default mode (mean the robot is ready to be used) 
+    2. Manual: The robot is controlled through the Terminal from the Robot-Interface class ( based on teleop)
+    3. Auto: The robot orient itself from anywhere toward Greenwich Observatory
 
 
-Download this repository and enter it:
-~~~
-git clone https://github.com/cocodmdr/turtlebot3_robot_localization_ws.git
-cd turtlebot3_robot_localization_ws
-~~~
+Note: 
 
-Install required dependencies and build package:
-~~~
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --symlink-install
-~~~
+when designing the solution, there were two options for testing: 
 
-Start gazebo with turtlebot3, it has IMU and GPS sensors.\
-Make sure you sourced ROS2 Foxy in each terminal.
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-export TURTLEBOT3_MODEL=waffle
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_robot_localization_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
-ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-~~~
+1) use the different Test cases for different locations
 
-If gazebo is not working properly, kill and relaunch.
-~~~
-killall gazebo 
-killall gzserver
-killall gzclient
-~~~
+2) switch robot to manual and drive anywhere and test.
 
-Start either the first example or the second one **but not both**:
+Due to the time constraint the second option was chosen, since it allows infinity tests scenarios for anywhere, and it is more challenging to implement. In ideal case, both test should have been considered. 
 
-1. Start robot_localization local ekf example:
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 launch robot_localization ekf.launch.py
-~~~
+Known Limitation: 
 
-2. Start robot_localization ekf with gps example:
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 launch robot_localization dual_ekf_navsat_example_simulation.launch.py
-~~~
+    1. Using one sensor as the only source of information is not ideal, especially for outdoors. For real scenario, an sensor fusion can be used to get more reliable data from different sensors. 
+    2. PID controller was chosen with value of 1 for P and 0 for both I and D, it still have a good performance since this is a simulated environment. For real application, these parameters needed to be carefully tuned, and for more complicated task such a trajectory following, an optimal controller or model predictive controller should be considered
+    3. For a real application, a more time should be dedicated to choose the appropriate quality of the server for each topic. 
 
-set datum (see:http://wiki.ros.org/ROS/YAMLCommandLine)
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 service call /datum robot_localization/srv/SetDatum '{geo_pose: {position: {latitude: 47.84063717753856, longitude: 10.619951493275392, altitude: 740.0870444467291}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}'
-ros2 service call /datum robot_localization/srv/SetDatum '{geo_pose: {position: {latitude: 47.84063717753856, longitude: 10.619951493275392, altitude: 740.0870444467291}, orientation: {x: 0.0, y: 0.0, z: 0.383, w: 0.924}}}'
-ros2 service call /datum robot_localization/srv/SetDatum '{geo_pose: {position: {latitude: 47.818646333333334, longitude: 10.623770833333333, altitude: 740.0870444467291}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}'
-ros2 service call /datum robot_localization/srv/SetDatum '{geo_pose: {position: {latitude: 47.840636, longitude: 10.619921, altitude: 740.0870444467291}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}'
-~~~
 
-You can control the virtual TurtleBot3 by using keyboard teleoperation:
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-export TURTLEBOT3_MODEL=waffle
-ros2 run turtlebot3_teleop teleop_keyboard
-~~~
 
-Visualize in Rviz:
-~~~
-source  ~/turtlebot3_robot_localization_ws/install/setup.bash
-rviz2 -d ~/turtlebot3_robot_localization_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/tb3_gazebo_robot_localization.rviz
-~~~
+Requirements: 
 
-In Rviz you can use the **reset** button when you relaunch the gazebo simulation because there are sometimes problems due to time jumps.
+ROS2-Foxy
+Python3.
+Gazebo
 
-## Turtlebot GPS navigation 
+How To Run: 
 
-Start gazebo with turtlebot3, it has IMU and GPS sensors.\
-Make sure you sourced ROS2 Foxy in each terminal.
-~~~
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-export TURTLEBOT3_MODEL=waffle
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_robot_localization_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
-ros2 launch turtlebot3_gazebo empty_world.launch.py
+    1)  Download the Package & navigate to Package
+    2)  Build the Package by Typing Colcon build 
+    3)  open 3 Terminals:
+    4)  source the workspace by typing source install/setup.bash (each Terminal)
+    5)  In the First Terminal:  ros2 run turtlebot3_orient_toward_greenwich Robot_interface 
+    6) In the Second Terminal: ros2 launch turtlebot3_orient_toward_greenwich turtlebot_launch.py 
+    7) in The Third Terminal: 
+        1. export TURTLEBOT3_MODEL=waffle
+        2. export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_orient_toward_greenwich_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
+        3. ros2 launch turtlebot3_gazebo empty_world.launch.py
+
+
 ~~~
