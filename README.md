@@ -39,9 +39,9 @@ Due to the time constraint the second option was chosen, since it allows infinit
 
 ## Requirements: 
 
-ROS2-Foxy
-Python3.
-Gazebo
+* ROS2-Foxy
+* Python3
+* Gazebo
 
 ## How To Run: 
 
