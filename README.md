@@ -31,10 +31,9 @@ when designing the solution, there were two options for testing:
 Due to the time constraint the second option was chosen, since it allows infinity tests scenarios for anywhere, and it is more challenging to implement. In ideal case, both test should have been considered. 
 
 ## Known Limitation: 
-
-    1. Using one sensor as the only source of information is not ideal, especially for outdoors. For real scenario, an sensor fusion can be used to get more reliable data from different sensors. 
-    2. PID controller was chosen with value of 1 for P and 0 for both I and D, it still have a good performance since this is a simulated environment. For real application, these parameters needed to be carefully tuned, and for more complicated task such a trajectory following, an optimal controller or model predictive controller should be considered
-    3. For a real application, a more time should be dedicated to choose the appropriate quality of the server for each topic. 
+   1) Using one sensor as the only source of information is not ideal, especially for outdoors. For real scenario, an sensor fusion can be used to get more reliable data from different sensors. 
+   2) PID controller was chosen with value of 1 for P and 0 for both I and D, it still have a good performance since this is a simulated environment. For real application, these parameters needed to be carefully tuned, and for more complicated task such a trajectory following, an optimal controller or model predictive controller should be considered
+   3)  For a real application, a more time should be dedicated to choose the appropriate quality of the server for each topic. 
 
 
 ## Requirements: 
